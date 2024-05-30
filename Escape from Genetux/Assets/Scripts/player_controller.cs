@@ -48,7 +48,7 @@ public class player_controller : MonoBehaviour
 
         }else {//input=0
             idle_time=Time.time;
-            sr.sprite = sprite_direction[0];
+            sr.sprite = s_sprite[0];
         }
 
     }
