@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5074422262763122844}
   - component: {fileID: 4575546575284760473}
   - component: {fileID: 2929999627132745274}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pelotte
   m_TagString: Untagged
   m_Icon: {fileID: 0}

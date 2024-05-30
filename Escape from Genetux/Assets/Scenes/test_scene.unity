@@ -384,7 +384,10 @@ GameObject:
   - component: {fileID: 1744833755}
   - component: {fileID: 1744833754}
   - component: {fileID: 1744833756}
+<<<<<<< Updated upstream
   - component: {fileID: 1744833757}
+=======
+>>>>>>> Stashed changes
   m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
