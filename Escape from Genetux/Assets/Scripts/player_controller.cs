@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class player_controller : MonoBehaviour
 {
+    public int health = 5;
     public float move_speed = 5f;
     public Rigidbody2D rb;
     public weapon weapon;
