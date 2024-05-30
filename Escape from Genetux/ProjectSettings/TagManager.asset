@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ennemi
   layers:
   - Default
   - TransparentFX
@@ -11,11 +12,19 @@ TagManager:
   - 
   - Water
   - UI
+<<<<<<< Updated upstream
   - 
   - 
   - 
   - 
   - 
+=======
+  - ground
+  - Player
+  - walls
+  - pelottes
+  - ennemi
+>>>>>>> Stashed changes
   - 
   - 
   - 
