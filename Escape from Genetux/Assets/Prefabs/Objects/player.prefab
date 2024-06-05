@@ -241,7 +241,13 @@ GameObject:
   - component: {fileID: 294396865050507984}
   - component: {fileID: 2007891736820817618}
   - component: {fileID: 6005610944814633876}
+<<<<<<< Updated upstream
   m_Layer: 0
+=======
+  - component: {fileID: -8875131799039417477}
+  - component: {fileID: 41010023148788676}
+  m_Layer: 7
+>>>>>>> Stashed changes
   m_Name: player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -416,3 +422,34 @@ MonoBehaviour:
   - {fileID: 1470611668, guid: c38274a13b002011e93b072dc034861e, type: 3}
   - {fileID: 694425472, guid: c38274a13b002011e93b072dc034861e, type: 3}
   framerate: 15
+--- !u!114 &-8875131799039417477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7362864610195039732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
+--- !u!114 &41010023148788676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7362864610195039732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 15da2d0ae3f44fd4a9660013bc6d98cd, type: 2}
