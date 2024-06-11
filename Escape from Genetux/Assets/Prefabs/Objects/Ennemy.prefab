@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2124561786723854643}
   - component: {fileID: 2120032400028888595}
   - component: {fileID: 5131321129818097474}
+  - component: {fileID: 175728911155766633}
   m_Layer: 0
   m_Name: Ennemy
   m_TagString: Untagged
@@ -177,7 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   rotate_speed: 0.05
-  speed: 1.25
+  speed: 1
 --- !u!114 &5131321129818097474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,3 +192,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pa_distance: 4
+--- !u!114 &175728911155766633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3584857091626537958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c93364d56ba1ccc2c8863d737ab7f527, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage_amount: 10

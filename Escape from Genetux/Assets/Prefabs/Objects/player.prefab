@@ -244,6 +244,9 @@ GameObject:
   - component: {fileID: 8589688373020946540}
   - component: {fileID: -8818016781382479366}
   - component: {fileID: 4928690010672336919}
+  - component: {fileID: 7943764306124399160}
+  - component: {fileID: 766645778671661619}
+  - component: {fileID: -4564743185778638382}
   m_Layer: 7
   m_Name: player
   m_TagString: Player
@@ -462,3 +465,99 @@ MonoBehaviour:
   _data:
     _json: '{"nest":{"source":"Macro","macro":null,"embed":null}}'
     _objectReferences: []
+--- !u!114 &7943764306124399160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7362864610195039732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f87bff7ea3ce9482bb1b79450358430c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  current_health: 100
+  max_health: 100
+  is_dead:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2007891736820817618}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6005610944814633876}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  is_damaged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -4564743185778638382}
+        m_TargetAssemblyTypeName: player_damaged_invincibility, Assembly-CSharp
+        m_MethodName: StartInvincibility
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  on_health_changed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1202138630813331787, guid: 92af149702974d178b8730f49c129fff, type: 3}
+        m_TargetAssemblyTypeName: health_bar_ui, Assembly-CSharp
+        m_MethodName: update_health_bar
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7943764306124399160}
+          m_ObjectArgumentAssemblyTypeName: health_controller, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &766645778671661619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7362864610195039732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09d8cbf2b73dd4784b60cdf264874ce5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-4564743185778638382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7362864610195039732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 149910e6345abb1e88b9869443d38732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Invincibility_duration: 2
