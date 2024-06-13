@@ -14,7 +14,6 @@ public class ennemy_script : MonoBehaviour
     private Rigidbody2D rb;
     private PlayerAwarenessController pac;
     private Vector2 target_direction;
-    private float direction_change_cooldown = 2f;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
 

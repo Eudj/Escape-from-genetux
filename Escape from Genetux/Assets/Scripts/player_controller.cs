@@ -18,15 +18,14 @@ public class player_controller : MonoBehaviour
     public List<Sprite> w_sprite;
     public List<Sprite> nw_sprite;
     public float framerate;
-    float idle_time = Time.time;
-
-
-    
-
-
-
+    float idle_time = 0;
     Vector2 move_direction;
     Vector2 mouse_position;
+
+
+    private void Start() {
+        idle_time = Time.time;
+    }
    // Update is called once per frame
     void Update()
     {

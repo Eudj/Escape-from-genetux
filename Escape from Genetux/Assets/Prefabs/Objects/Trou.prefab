@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8481893755714656089}
   - component: {fileID: 1213163140701406547}
   - component: {fileID: -120526425489691740}
-  - component: {fileID: -800686416615966504}
   - component: {fileID: 4798364934450662459}
+  - component: {fileID: -2321844816849590134}
   m_Layer: 6
   m_Name: Trou
   m_TagString: Untagged
@@ -73,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1047174487
-  m_SortingLayer: 1
+  m_SortingLayerID: -741570493
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8bd7bd0c7945c774aaf4e9d1f708a77e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -103,22 +103,6 @@ MonoBehaviour:
     _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"SceneName","value":{"$content":"salle1","$type":"System.String"},"typeHandle":{"Identification":"System.String,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
---- !u!114 &-800686416615966504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6073649057132613213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: 4acb52411289cd44f8a9d7deebf26683, type: 2}
 --- !u!61 &4798364934450662459
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -164,3 +148,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.2}
   m_EdgeRadius: 0
+--- !u!114 &-2321844816849590134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6073649057132613213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145e604f5c016fce38f6612e446627fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage_amount: 10

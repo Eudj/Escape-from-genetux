@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3019462454952750662}
   - component: {fileID: 3019462454952750681}
   - component: {fileID: 3019462454952750680}
+  - component: {fileID: 2014025146750428607}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -112,3 +113,17 @@ MonoBehaviour:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
     - {fileID: 11400000, guid: 60e9dc275a2fd5b49b143bde6981150a, type: 2}
+--- !u!114 &2014025146750428607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3019462454952750683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46923629dca2b424caf0e976d6baf5c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnpoint: {x: 0, y: 0, z: 0}
+  scene_name: 100

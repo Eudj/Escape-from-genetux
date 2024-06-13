@@ -47,3 +47,15 @@ TagManager:
   - name: Foreground
     uniqueID: 1047174487
     locked: 0
+  - name: pelottes
+    uniqueID: 84263275
+    locked: 0
+  - name: player
+    uniqueID: 485637963
+    locked: 0
+  - name: trap
+    uniqueID: 3553396803
+    locked: 0
+  - name: bkgd
+    uniqueID: 199430201
+    locked: 0
