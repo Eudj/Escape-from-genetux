@@ -5,13 +5,11 @@ using UnityEngine.Events;
 
 public class health_controller : MonoBehaviour
 {
-    [SerializeField]
-    private float current_health;
+    [SerializeField] public float current_health;
 
-    [SerializeField]
-    private float max_health;
+    [SerializeField] private float max_health;
 
-    public float health_remaining
+    [SerializeField] public float health_remaining
     {
         get
         {
@@ -25,6 +23,10 @@ public class health_controller : MonoBehaviour
 
     public UnityEvent is_damaged;
     public UnityEvent on_health_changed;
+
+    public void update_health(){
+        on_health_changed.Invoke();
+    }
 
     public void take_damage(float damage_amount)
     {
