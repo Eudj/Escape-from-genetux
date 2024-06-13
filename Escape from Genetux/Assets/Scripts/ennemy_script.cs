@@ -16,6 +16,7 @@ public class ennemy_script : MonoBehaviour
     private Vector2 target_direction;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
+    private float direction_change_cooldown = 3f;
 
 
     // Start is called before the first frame update
@@ -63,10 +64,10 @@ public class ennemy_script : MonoBehaviour
     private void random_direction (){
         direction_change_cooldown = direction_change_cooldown - Time.deltaTime;
         if (direction_change_cooldown <=0){
-            float angle_change = UnityEngine.Random.Range(-180f,180f)*Mathf.Rad2Deg;
+            float angle_change = UnityEngine.Random.Range(-90,90)*Mathf.Rad2Deg;
             Quaternion q = Quaternion.Euler(new Vector3(0,0,angle_change));
             transform.localRotation = Quaternion.Slerp(transform.localRotation,q,rotate_speed);
-            direction_change_cooldown = UnityEngine.Random.Range(0.5f,2f);
+            direction_change_cooldown = UnityEngine.Random.Range(1f,5f);
 
         }
 
