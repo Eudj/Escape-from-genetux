@@ -15,6 +15,8 @@ public class ennemy_script : MonoBehaviour
     private PlayerAwarenessController pac;
     private Vector2 target_direction;
     private float direction_change_cooldown = 2f;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
 
 
     // Start is called before the first frame update
@@ -23,6 +25,9 @@ public class ennemy_script : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         pac = GetComponent<PlayerAwarenessController>();
         target_direction = transform.up;
+        animator = GetComponent<Animator>();
+        animator.enabled = true;
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();    
     }
 
     private void FixedUpdate()
@@ -35,6 +40,17 @@ public class ennemy_script : MonoBehaviour
             random_direction();
         }
         set_velocity();
+
+    // change le sens du sprite pour le mettre dans la bonne direction
+        if ((gameObject.transform.rotation.eulerAngles.z%360) < 180)
+        {
+            spriteRenderer.flipX = true;
+        }
+        if ((gameObject.transform.rotation.eulerAngles.z%360) > 180)
+        {
+            spriteRenderer.flipX = false;
+        }
+
     }
     
     
@@ -76,6 +92,7 @@ public class ennemy_script : MonoBehaviour
     {
         
         rb.velocity = transform.up * speed;
+        animator.SetFloat("Speed", speed);
         
     }
 }
