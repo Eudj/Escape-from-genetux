@@ -1,18 +1,14 @@
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-
 public class global : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+       const int ScreenFadingIn = -1;
+       const int ScreenIdle = 0;
+       const int ScreenFadingOut   =   1;
+       public static float ScreenFadeAlpha = 1.0f;
+       public static int ScreenFadeStatus = ScreenFadingIn;
+       public float player_health = 100f;
+       public Vector3 spawn_point ;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

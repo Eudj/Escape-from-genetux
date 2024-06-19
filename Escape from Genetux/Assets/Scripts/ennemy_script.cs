@@ -80,14 +80,12 @@ public class ennemy_script : MonoBehaviour
         Quaternion q = Quaternion.Euler(new Vector3(0,0,angle));
         transform.localRotation = Quaternion.Slerp(transform.localRotation,q,rotate_speed);
     }
-    /*private void OnCollisionEnter2D(Collision2D other){
-        if (other.gameObject.CompareTag("Player")){
-            Destroy(other.gameObject);
-            target=null;
-        } else if (other.gameObject.CompareTag("pelotte"));
-        Destroy(gameObject);
+    private void OnCollisionEnter2D(Collision2D other){
+        if (other.gameObject.CompareTag("pelotte")){
+            Destroy(gameObject);
         Destroy(other.gameObject);
-    }*/
+        }
+    }
     private void set_velocity()
     {
         

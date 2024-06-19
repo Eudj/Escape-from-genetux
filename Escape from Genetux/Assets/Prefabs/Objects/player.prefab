@@ -243,7 +243,6 @@ GameObject:
   - component: {fileID: 6005610944814633876}
   - component: {fileID: 8589688373020946540}
   - component: {fileID: -8818016781382479366}
-  - component: {fileID: 4928690010672336919}
   - component: {fileID: 7943764306124399160}
   - component: {fileID: 766645778671661619}
   - component: {fileID: -4564743185778638382}
@@ -423,6 +422,7 @@ MonoBehaviour:
   - {fileID: 1470611668, guid: c38274a13b002011e93b072dc034861e, type: 3}
   - {fileID: 694425472, guid: c38274a13b002011e93b072dc034861e, type: 3}
   framerate: 15
+  instance_ID: 0
 --- !u!114 &8589688373020946540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -449,21 +449,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _data:
     _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
---- !u!114 &4928690010672336919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7362864610195039732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efe58df89b5b74a97a123b5ed2b70422, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":null,"embed":null}}'
     _objectReferences: []
 --- !u!114 &7943764306124399160
 MonoBehaviour:

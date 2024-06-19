@@ -5,6 +5,10 @@ using UnityEngine.Events;
 
 public class health_controller : MonoBehaviour
 {
+    private void Start() {
+        DontDestroyOnLoad(this.gameObject);
+    }
+    
     [SerializeField] public float current_health;
 
     [SerializeField] private float max_health;

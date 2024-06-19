@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,12 +20,18 @@ public class player_controller : MonoBehaviour
     public List<Sprite> nw_sprite;
     public float framerate;
     float idle_time = 0;
+    public float instance_ID;
     Vector2 move_direction;
     Vector2 mouse_position;
 
 
     private void Start() {
         idle_time = Time.time;
+        while(instance_ID ==0){
+            instance_ID = GetInstanceID();
+        }
+        
+
     }
    // Update is called once per frame
     void Update()
@@ -32,6 +39,10 @@ public class player_controller : MonoBehaviour
         //transform.localRotation = new Quaternion ();
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
+        //instance_ID = GetInstanceID();
+        if (instance_ID !=-1970){
+            Destroy(this.gameObject);
+        }
 
         if(Input.GetMouseButtonDown(0)){
             weapon.fire();
