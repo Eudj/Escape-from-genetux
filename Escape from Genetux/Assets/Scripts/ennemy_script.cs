@@ -27,7 +27,7 @@ public class ennemy_script : MonoBehaviour
         target_direction = transform.up;
         animator = GetComponent<Animator>();
         animator.enabled = true;
-        spriteRenderer = GetComponentInChildren<SpriteRenderer>();    
+        spriteRenderer = GetComponent<SpriteRenderer>();    
     }
 
     private void FixedUpdate()
@@ -45,8 +45,7 @@ public class ennemy_script : MonoBehaviour
         if ((gameObject.transform.rotation.eulerAngles.z%360) < 180)
         {
             spriteRenderer.flipX = true;
-        }
-        if ((gameObject.transform.rotation.eulerAngles.z%360) > 180)
+        } else if ((gameObject.transform.rotation.eulerAngles.z%360) > 180)
         {
             spriteRenderer.flipX = false;
         }
@@ -74,7 +73,6 @@ public class ennemy_script : MonoBehaviour
     }
     private void rotate_towards_target()
     {
-        
         target_direction = target.position-transform.position;
         float angle = Mathf.Atan2(target_direction.y,target_direction.x)*Mathf.Rad2Deg -90f;
         Quaternion q = Quaternion.Euler(new Vector3(0,0,angle));
@@ -83,7 +81,6 @@ public class ennemy_script : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other){
         if (other.gameObject.CompareTag("pelotte")){
             Destroy(gameObject);
-        Destroy(other.gameObject);
         }
     }
     private void set_velocity()
@@ -91,6 +88,5 @@ public class ennemy_script : MonoBehaviour
         
         rb.velocity = transform.up * speed;
         animator.SetFloat("Speed", speed);
-        
     }
 }

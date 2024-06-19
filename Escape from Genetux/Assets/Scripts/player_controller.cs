@@ -23,6 +23,7 @@ public class player_controller : MonoBehaviour
     public float instance_ID;
     Vector2 move_direction;
     Vector2 mouse_position;
+    private static player_controller playerInstance;
 
 
     private void Start() {
@@ -33,6 +34,16 @@ public class player_controller : MonoBehaviour
         
 
     }
+    
+void Awake(){
+	DontDestroyOnLoad (this);
+		
+	if (playerInstance == null) {
+		playerInstance = this;
+	} else {
+		Destroy(gameObject);
+	}
+}
    // Update is called once per frame
     void Update()
     {
@@ -41,7 +52,7 @@ public class player_controller : MonoBehaviour
         float moveY = Input.GetAxisRaw("Vertical");
         //instance_ID = GetInstanceID();
         if (instance_ID !=-3620){
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
         }
 
         if(Input.GetMouseButtonDown(0)){
