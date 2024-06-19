@@ -60,6 +60,7 @@ public class health_controller : MonoBehaviour
         {
             is_damaged.Invoke();
         }
+
     }
 
     public void add_health(float ammount_to_add)
