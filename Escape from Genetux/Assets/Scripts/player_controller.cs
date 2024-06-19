@@ -40,7 +40,7 @@ public class player_controller : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
         //instance_ID = GetInstanceID();
-        if (instance_ID !=-1970){
+        if (instance_ID !=-3620){
             Destroy(this.gameObject);
         }
 
