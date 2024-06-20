@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2321844816849590134, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
+      propertyPath: damage_amount
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6073649057132613213, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
       propertyPath: m_Name
       value: Trou (5)
@@ -245,6 +249,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2321844816849590134, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
+      propertyPath: damage_amount
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6073649057132613213, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
       propertyPath: m_Name
       value: Trou (7)
@@ -9807,63 +9815,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45e31c4f65f3ae447bdc4679150129c7, type: 3}
---- !u!1001 &501281901
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6073649057132613213, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
-      propertyPath: m_Name
-      value: Trou (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8481893755714656089, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8.97
-      objectReference: {fileID: 0}
-    - target: {fileID: 8481893755714656089, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -10.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 8481893755714656089, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8481893755714656089, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8481893755714656089, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8481893755714656089, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8481893755714656089, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8481893755714656089, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8481893755714656089, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8481893755714656089, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
 --- !u!1001 &560001857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10103,6 +10054,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2321844816849590134, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
+      propertyPath: damage_amount
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6073649057132613213, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
       propertyPath: m_Name
       value: Trou (6)
@@ -10160,6 +10115,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2321844816849590134, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
+      propertyPath: damage_amount
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6073649057132613213, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
       propertyPath: m_Name
       value: Trou (8)
@@ -10217,6 +10176,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2321844816849590134, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
+      propertyPath: damage_amount
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6073649057132613213, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
       propertyPath: m_Name
       value: Trou (2)
@@ -10392,6 +10355,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2321844816849590134, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
+      propertyPath: damage_amount
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6073649057132613213, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
       propertyPath: m_Name
       value: Trou (1)
@@ -10451,7 +10418,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2321844816849590134, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
       propertyPath: damage_amount
-      value: 100
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4798364934450662459, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
       propertyPath: m_Size.x
@@ -10735,6 +10702,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2321844816849590134, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
+      propertyPath: damage_amount
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6073649057132613213, guid: 31fad21c4dd739243b8c65f7705ea22f, type: 3}
       propertyPath: m_Name
       value: Trou (4)
@@ -11072,7 +11043,6 @@ SceneRoots:
   - {fileID: 1249121845}
   - {fileID: 1273968044}
   - {fileID: 1507050842}
-  - {fileID: 501281901}
   - {fileID: 1704759508}
   - {fileID: 46271881}
   - {fileID: 156870110}

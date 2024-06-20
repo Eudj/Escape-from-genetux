@@ -175,6 +175,18 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2007891736820817618, guid: ee509b9b3c78cd3fea91a15838c5313e, type: 3}
+      propertyPath: m_Radius
+      value: 0.08620791
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007891736820817618, guid: ee509b9b3c78cd3fea91a15838c5313e, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007891736820817618, guid: ee509b9b3c78cd3fea91a15838c5313e, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.047130838
+      objectReference: {fileID: 0}
     - target: {fileID: 6005610944814633876, guid: ee509b9b3c78cd3fea91a15838c5313e, type: 3}
       propertyPath: framerate
       value: 10
