@@ -78,9 +78,19 @@ public class ennemy_script : MonoBehaviour
         Quaternion q = Quaternion.Euler(new Vector3(0,0,angle));
         transform.localRotation = Quaternion.Slerp(transform.localRotation,q,rotate_speed);
     }
+
+    IEnumerator death(){
+        animator.SetBool("Dead", true);
+        rb.velocity = Vector3.zero;
+        rb.isKinematic = true;
+        rb.Sleep();
+        yield return new WaitForSeconds(1);
+        Destroy(gameObject);
+    }
     private void OnCollisionEnter2D(Collision2D other){
         if (other.gameObject.CompareTag("pelotte")){
-            Destroy(gameObject);
+            StartCoroutine(death());
+            death();
         }
     }
     private void set_velocity()

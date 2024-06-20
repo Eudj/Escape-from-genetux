@@ -6821,11 +6821,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8902179263957347186, guid: 45e31c4f65f3ae447bdc4679150129c7, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8902179263957347186, guid: 45e31c4f65f3ae447bdc4679150129c7, type: 3}
       propertyPath: m_UseDelaunayMesh
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
