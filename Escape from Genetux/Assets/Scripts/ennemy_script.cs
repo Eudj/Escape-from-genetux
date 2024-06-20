@@ -27,7 +27,7 @@ public class ennemy_script : MonoBehaviour
         target_direction = transform.up;
         animator = GetComponent<Animator>();
         animator.enabled = true;
-        spriteRenderer = GetComponent<SpriteRenderer>();    
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();    
     }
 
     private void FixedUpdate()
