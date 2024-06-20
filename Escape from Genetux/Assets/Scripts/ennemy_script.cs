@@ -17,12 +17,14 @@ public class ennemy_script : MonoBehaviour
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     private float direction_change_cooldown = 3f;
+    private Collider2D collider ;
 
 
     // Start is called before the first frame update
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        collider = GetComponent<Collider2D>();
         pac = GetComponent<PlayerAwarenessController>();
         target_direction = transform.up;
         animator = GetComponent<Animator>();
@@ -80,6 +82,7 @@ public class ennemy_script : MonoBehaviour
     }
 
     IEnumerator death(){
+        collider.enabled = false;
         animator.SetBool("Dead", true);
         rb.velocity = Vector3.zero;
         rb.isKinematic = true;
