@@ -7,6 +7,7 @@ TagManager:
   - MusicLab1
   - MusicLab2
   - pelotte
+  - enemy
   layers:
   - Default
   - TransparentFX

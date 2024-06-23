@@ -360,7 +360,6 @@ GameObject:
   - component: {fileID: 6484920312853495586}
   - component: {fileID: 509871260739971487}
   - component: {fileID: 7461816563922473781}
-  - component: {fileID: 7466292177593209877}
   - component: {fileID: 4449655870500994372}
   - component: {fileID: 8684654848614227823}
   - component: {fileID: 9044879783130689376}
@@ -478,21 +477,6 @@ PolygonCollider2D:
       - {x: -0.03178799, y: -0.1838656}
       - {x: 0.15131187, y: -0.18559882}
   m_UseDelaunayMesh: 0
---- !u!114 &7466292177593209877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5425077890570152416}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5529aeea4b37c2f69a937a82abc4427b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  rotate_speed: 0.05
-  speed: 2
 --- !u!114 &4449655870500994372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,8 +536,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a434ac1dea7f06821b1fbb35a36ddf41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pc: {fileID: 6005610944814633876, guid: ee509b9b3c78cd3fea91a15838c5313e, type: 3}
   current_health: 50
   max_health: 0
+  boss_bar: {fileID: 0}
   is_dead:
     m_PersistentCalls:
       m_Calls: []
@@ -573,6 +559,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3103766787869096798}
   - component: {fileID: 8464824137045846649}
+  - component: {fileID: 7887808510550781814}
   m_Layer: 5
   m_Name: healthenemy__bar
   m_TagString: Untagged
@@ -648,10 +635,26 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.666
+  m_Value: 0.617
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7887808510550781814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6510770366542676905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b916376e10440a3910c8e0764d8fe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boss_health_bar: {fileID: 8464824137045846649}
+  cam: {fileID: 0}
+  target: {fileID: 0}
+  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &6927596562828835329
 GameObject:
   m_ObjectHideFlags: 0

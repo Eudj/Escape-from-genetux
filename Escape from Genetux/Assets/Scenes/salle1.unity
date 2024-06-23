@@ -131,6 +131,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4564743185778638382, guid: ee509b9b3c78cd3fea91a15838c5313e, type: 3}
+      propertyPath: _flashColor.a
+      value: 0.50980395
+      objectReference: {fileID: 0}
+    - target: {fileID: -4564743185778638382, guid: ee509b9b3c78cd3fea91a15838c5313e, type: 3}
+      propertyPath: _flashColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4564743185778638382, guid: ee509b9b3c78cd3fea91a15838c5313e, type: 3}
+      propertyPath: _flashColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4564743185778638382, guid: ee509b9b3c78cd3fea91a15838c5313e, type: 3}
+      propertyPath: _flashColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4564743185778638382, guid: ee509b9b3c78cd3fea91a15838c5313e, type: 3}
+      propertyPath: _numberOfFlashes
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -4564743185778638382, guid: ee509b9b3c78cd3fea91a15838c5313e, type: 3}
+      propertyPath: _invincibilityDuration
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 266158923946266812, guid: ee509b9b3c78cd3fea91a15838c5313e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.53
@@ -7554,6 +7578,7 @@ GameObject:
   - component: {fileID: 1434569971}
   - component: {fileID: 1434569970}
   - component: {fileID: 1434569969}
+  - component: {fileID: 1434569972}
   m_Layer: 0
   m_Name: VisualScripting SceneVariables
   m_TagString: Untagged
@@ -7603,6 +7628,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1434569972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434569968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":-144.0},"guid":"004bee79-6450-4f79-97f7-daaa05edee29","$version":"A","$type":"Unity.VisualScripting.Start","$id":"10"},{"chainable":false,"parameterNames":["original","position","rotation"],"member":{"name":"Instantiate","parameterTypes":["UnityEngine.Object","UnityEngine.Vector3","UnityEngine.Quaternion"],"targetType":"UnityEngine.Component","targetTypeName":"UnityEngine.Component","$version":"A"},"defaultValues":{"%original":{"$content":0,"$type":"UnityEngine.Object"},"%position":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":154.0,"y":-128.0},"guid":"04546524-9d03-43f1-9cd1-c05c580c1435","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"12"},{"sourceUnit":{"$ref":"10"},"sourceKey":"trigger","destinationUnit":{"$ref":"12"},"destinationKey":"enter","guid":"f26739d0-ffba-4605-aeb0-42ff501cc209","$type":"Unity.VisualScripting.ControlConnection"}],"$version":"A"}}}'
+    _objectReferences:
+    - {fileID: 7362864610195039732, guid: ee509b9b3c78cd3fea91a15838c5313e, type: 3}
 --- !u!114 &1521494402 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6139190554424495885, guid: de0382695b75038b587430fd1ea12d1f, type: 3}
