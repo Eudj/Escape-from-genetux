@@ -19,9 +19,9 @@ public class ennemy_attack : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             animator.SetBool("Attack", true);
-            var health_controller = collision.gameObject.GetComponent<health_controller>();
+            var player_health_controller = collision.gameObject.GetComponent<player_health_controller>();
 
-            health_controller.take_damage(damage_amount);
+            player_health_controller.take_damage(damage_amount);
         }
     }
 

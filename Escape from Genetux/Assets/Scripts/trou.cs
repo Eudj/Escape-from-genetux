@@ -8,9 +8,9 @@ public float damage_amount;
 
 private void OnTriggerEnter2D(Collider2D trigger) {
         if (trigger.gameObject.CompareTag("Player")){
-            var health_controller = trigger.gameObject.GetComponent<health_controller>();
+            var player_health_controller = trigger.gameObject.GetComponent<player_health_controller>();
 
-            health_controller.take_damage(damage_amount);
+            player_health_controller.take_damage(damage_amount);
         
     }
 }

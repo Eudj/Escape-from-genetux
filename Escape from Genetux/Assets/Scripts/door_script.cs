@@ -10,7 +10,6 @@ public class door_script : MonoBehaviour{
 
     public string scene_name;
     private GameObject GO;
-    private health_controller hc ;
     private global glb;
 
 

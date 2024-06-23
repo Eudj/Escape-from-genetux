@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Events;
 using UnityEngine;
 
 public class player_controller : MonoBehaviour
@@ -20,18 +21,15 @@ public class player_controller : MonoBehaviour
     public List<Sprite> nw_sprite;
     public float framerate;
     float idle_time = 0;
-    public float instance_ID;
     Vector2 move_direction;
     Vector2 mouse_position;
     private static player_controller playerInstance;
+    public UnityEvent start;
 
 
     private void Start() {
         idle_time = Time.time;
-        while(instance_ID ==0){
-            instance_ID = GetInstanceID();
-        }
-        
+        start.Invoke();       
 
     }
     
@@ -50,14 +48,12 @@ void Awake(){
         //transform.localRotation = new Quaternion ();
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
-        //instance_ID = GetInstanceID();
-        if (instance_ID !=-3620){
-            //Destroy(this.gameObject);
-        }
+        
 
         if(Input.GetMouseButtonDown(0)){
             weapon.fire();
         }
+        
         move_direction = new Vector2(moveX,moveY).normalized;
         mouse_position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         List<Sprite> sprite_direction = get_sprite_direction();

@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
-public class health_controller : MonoBehaviour
+public class boss_health_controller : MonoBehaviour
 {
     private void Start() {
         DontDestroyOnLoad(gameObject);
+        boss_bar.update_boss_health(current_health,max_health);
     }
     
-    [SerializeField] public float current_health;
+    [SerializeField] public float current_health =50f;
 
     [SerializeField] private float max_health;
+    [SerializeField] private boss_bar_ui1 boss_bar;
 
     [SerializeField] public float health_remaining
     {
@@ -30,6 +33,10 @@ public class health_controller : MonoBehaviour
 
     public void update_health(){
         on_health_changed.Invoke();
+    }
+    private void Awake() {
+        //boss_bar = getc
+
     }
 
     public void take_damage(float damage_amount)
@@ -55,10 +62,13 @@ public class health_controller : MonoBehaviour
         if (current_health == 0)
         {
             is_dead.Invoke();
+            Destroy(this.gameObject);
+            SceneManager.LoadScene("death scene");
         }
         else
         {
             is_damaged.Invoke();
+            boss_bar.update_boss_health(current_health,max_health);
         }
 
     }
