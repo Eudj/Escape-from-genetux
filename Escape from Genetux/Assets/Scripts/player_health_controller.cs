@@ -8,6 +8,7 @@ public class player_health_controller : MonoBehaviour
 {
     private void Start() {
         DontDestroyOnLoad(gameObject);
+        current_health = 100f;
     }
     
     [SerializeField] public float current_health;
