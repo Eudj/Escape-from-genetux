@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -13,7 +12,7 @@ public class player_health_controller : MonoBehaviour
     
     [SerializeField] public float current_health;
 
-    [SerializeField] private float max_health;
+    [SerializeField] private float max_health = 100f;
 
     [SerializeField] public float health_remaining
     {

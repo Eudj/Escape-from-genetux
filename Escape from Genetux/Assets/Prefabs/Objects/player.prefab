@@ -241,7 +241,6 @@ GameObject:
   - component: {fileID: 294396865050507984}
   - component: {fileID: 2007891736820817618}
   - component: {fileID: 6005610944814633876}
-  - component: {fileID: 8589688373020946540}
   - component: {fileID: 7943764306124399160}
   - component: {fileID: 766645778671661619}
   - component: {fileID: -4564743185778638382}
@@ -265,8 +264,8 @@ Transform:
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 7400214229730454419}
   - {fileID: 6327987776888924952}
+  - {fileID: 7400214229730454419}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &294396865050507984
@@ -421,18 +420,9 @@ MonoBehaviour:
   - {fileID: 1470611668, guid: c38274a13b002011e93b072dc034861e, type: 3}
   - {fileID: 694425472, guid: c38274a13b002011e93b072dc034861e, type: 3}
   framerate: 15
---- !u!114 &8589688373020946540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7362864610195039732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55edd124aa014fc2a4d8ef1794dcd775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  start:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &7943764306124399160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -528,4 +518,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149910e6345abb1e88b9869443d38732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Invincibility_duration: 2
+  _invincibilityDuration: 0
+  _flashColor: {r: 0, g: 0, b: 0, a: 0}
+  _numberOfFlashes: 0

@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using Pathfinding;
-using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -18,6 +17,7 @@ public class boss_health_controller : MonoBehaviour
     private Collider2D collider ;
     private Rigidbody2D rb;
     private Animator animator;
+    private player_health_controller phc;
 
     [SerializeField] private float max_health =50f;
     [SerializeField] private boss_bar_ui1 boss_bar;
@@ -41,6 +41,7 @@ public class boss_health_controller : MonoBehaviour
         on_health_changed.Invoke();
     }
     private void Awake() {
+        phc = GetComponent<player_health_controller>();
         boss_bar = GetComponentInChildren<boss_bar_ui1>();
         collider = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
@@ -83,6 +84,7 @@ public class boss_health_controller : MonoBehaviour
             StartCoroutine(death());
             death();
             pc = GameObject.Find("player");
+            phc.current_health = 100f;
             pc.transform.position = new Vector3(0f,0f,0f);
             SceneManager.LoadScene("death scene");
             Destroy(this.gameObject);

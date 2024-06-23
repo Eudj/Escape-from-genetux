@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &83311854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7362864610195039732, guid: ee509b9b3c78cd3fea91a15838c5313e, type: 3}
+  m_PrefabInstance: {fileID: 187953642}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &187953642
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -153,7 +158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4564743185778638382, guid: ee509b9b3c78cd3fea91a15838c5313e, type: 3}
       propertyPath: _invincibilityDuration
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 266158923946266812, guid: ee509b9b3c78cd3fea91a15838c5313e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -294,7 +299,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7362864610195039732, guid: ee509b9b3c78cd3fea91a15838c5313e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 899635354}
   m_SourcePrefab: {fileID: 100100000, guid: ee509b9b3c78cd3fea91a15838c5313e, type: 3}
 --- !u!1 &300813979
 GameObject:
@@ -7338,7 +7346,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7943764306124399160, guid: ee509b9b3c78cd3fea91a15838c5313e, type: 3}
   m_PrefabInstance: {fileID: 187953642}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 83311854}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f87bff7ea3ce9482bb1b79450358430c, type: 3}
@@ -7349,7 +7357,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6005610944814633876, guid: ee509b9b3c78cd3fea91a15838c5313e, type: 3}
   m_PrefabInstance: {fileID: 187953642}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 83311854}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ab0690ce1ffe78f9a36150a135cff1c, type: 3}
@@ -7360,6 +7368,18 @@ CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 2007891736820817618, guid: ee509b9b3c78cd3fea91a15838c5313e, type: 3}
   m_PrefabInstance: {fileID: 187953642}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &899635354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83311854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de1ef6868ea93a7cf90e455118fe3b08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1098929690
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 public class player_damaged_invincibility : MonoBehaviour
 {
     [SerializeField]
-    private float _invincibilityDuration;
+    private float _invincibilityDuration = 2f;
 
     [SerializeField]
     private Color _flashColor;

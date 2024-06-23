@@ -286,7 +286,7 @@ namespace Pathfinding {
 					}
 				} else {
 					EditorPrefs.DeleteKey("AstarRemindUpdateDate");
-					EditorPrefs.DeleteKey("AstarRemindUpdateVersion");
+					//EditorPrefs.DeleteKey("AstarRemindUpdateVersion");
 				}
 			} catch {
 				Debug.LogError("Invalid AstarRemindUpdateVersion or AstarRemindUpdateDate");

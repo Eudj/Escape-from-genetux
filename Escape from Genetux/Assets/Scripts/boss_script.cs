@@ -82,20 +82,7 @@ public class boss_script : MonoBehaviour
         transform.localRotation = Quaternion.Slerp(transform.localRotation,q,rotate_speed);
     }
 
-/*    IEnumerator death(){
-        collider.enabled = false;
-        animator.SetBool("Dead", true);
-        rb.velocity = Vector3.zero;
-        rb.isKinematic = true;
-        rb.Sleep();
-        yield return new WaitForSeconds(1);
-        Destroy(gameObject);
-    }*/
-    private void OnCollisionEnter2D(Collision2D other){
-        if (other.gameObject.CompareTag("pelotte")){
-            
-        }
-    }
+
     private void set_velocity()
     {
         
