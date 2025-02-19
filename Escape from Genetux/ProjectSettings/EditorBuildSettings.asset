@@ -5,7 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+  - enabled: 0
+    path: Assets/Prefabs/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/Scenes/TestSalle.unity
+    guid: 5515390342a37954992ac247b57f8713
+  - enabled: 1
+    path: Assets/Scenes/salle1.unity
+    guid: 4979822759dfc6c4d9cd37d74919dcc6
+  - enabled: 1
+    path: Assets/Scenes/salle2.unity
+    guid: cead94eb307b1304fbd95f4b44cad2f5
+  - enabled: 1
+    path: Assets/Scenes/salle3.unity
+    guid: 467d815983068ca4cb416371ec8c1a3a
+  - enabled: 1
+    path: Assets/Scenes/death scene.unity
+    guid: 75196b920b8a3e127a588b5f936d8640
   m_configObjects: {}

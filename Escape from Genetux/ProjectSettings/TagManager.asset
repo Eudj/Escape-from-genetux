@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - MusicLab1
+  - MusicLab2
+  - pelotte
+  - enemy
   layers:
   - Default
   - TransparentFX
@@ -11,11 +15,11 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - ground
+  - Player
+  - walls
+  - pelottes
+  - Ennemi
   - 
   - 
   - 
@@ -40,4 +44,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: bkgd
+    uniqueID: 199430201
+    locked: 0
+  - name: pelottes
+    uniqueID: 84263275
+    locked: 0
+  - name: trap
+    uniqueID: 3553396803
+    locked: 0
+  - name: player
+    uniqueID: 485637963
+    locked: 0
+  - name: Foreground
+    uniqueID: 1047174487
     locked: 0
